@@ -35,15 +35,8 @@ module.exports = merge(baseWebpackConfig, {
   devServer: {
     proxy: {
       "/service/**": "http://121.40.57.9/",
-      // "/service/*": "http://app.yunejian.com/",
-      // "/service/*": "http://121.40.57.9",    //李志龙
-      // "/__/*": "http://localhost:8083",    //李志龙
-      // "**/*.xlsx": "http://localhost:8083",    //李志龙
-      // "**/*.docx": "http://localhost:8083",    //李志龙
-      // "/service/*": "http://10.200.1.87:8080/yunejian-tb-server/",  //刘天琪
       "/ufile/*": "http://121.40.57.9/",
       "/file/*": "http://121.40.57.9/"
-      // "/file/*": "http://localhost:8083"
     },
     hot: true,
     inline: true,
